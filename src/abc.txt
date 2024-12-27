@@ -1,0 +1,233 @@
+   const LINKS = [
+        "https://www.youtube.com/embed/sjS8vkvycmw",
+        "https://www.youtube.com/embed/Hvo4NeUxLdc",
+        "https://www.youtube.com/embed/JAdx6tR1WnQ",
+        "https://www.youtube.com/embed/QER4JTHn-0E",
+        "https://www.youtube.com/embed/lH-siAW6qgI",
+        "https://www.youtube.com/embed/Hqt9lIFndko",
+        "https://www.youtube.com/embed/3Wmf9YH3jE0",
+        "https://www.youtube.com/embed/NuhowPIwQnY",
+        "https://www.youtube.com/embed/WEkenhA5mPU",
+        "https://www.youtube.com/embed/Lu-n16Dvn_U",
+        "https://www.youtube.com/embed/35TzhLl_bxA",
+        "https://www.youtube.com/embed/2gYbC7V99bE",
+        "https://www.youtube.com/embed/zaCtU6ICQwM",
+        "https://www.youtube.com/embed/r1rttkN95fM",
+        "https://www.youtube.com/embed/5hfZfYtNyyc",
+        "https://www.youtube.com/embed/E2QfGcVJgVc",
+        "https://www.youtube.com/embed/AnnupMVYFW4",
+        "https://www.youtube.com/embed/OSAIZ5mRA9k",
+        "https://www.youtube.com/embed/tbOo7KvAV-g",
+        "https://www.youtube.com/embed/lgxhTUXS-cE",
+        "https://www.youtube.com/embed/0VbXvzUB4aI",
+        "https://www.youtube.com/embed/fEQ4yD2SqqE",
+        "https://www.youtube.com/embed/FlmvtkakSfg",
+        "https://www.youtube.com/embed/TVC8A720lgc",
+        "https://www.youtube.com/embed/44bpk_QSJpo",
+        "https://www.youtube.com/embed/LYnfRh6SlgQ",
+        "https://www.youtube.com/embed/3Q6qY-GOzFo",
+        "https://www.youtube.com/embed/qgeHsDYqjpM",
+        "https://www.youtube.com/embed/AAMqxrFhP6Y",
+        "https://www.youtube.com/embed/Kb0GuzuTxys",
+        "https://www.youtube.com/embed/BXQNWTH5b6g",
+        "https://www.youtube.com/embed/fyTTBm40EsI",
+        "https://www.youtube.com/embed/fO6-swedJ1Y",
+        "https://www.youtube.com/embed/oVP46R8tRnE",
+        "https://www.youtube.com/embed/MA9vsGaH3U0",
+        "https://www.youtube.com/embed/tOafZpE1KvE",
+        "https://www.youtube.com/embed/MQbWkv8E4NQ",
+        "https://www.youtube.com/embed/583u5D3p4hA",
+        "https://www.youtube.com/embed/aoJzNFZD_fA",
+        "https://www.youtube.com/embed/atfTeTESraU",
+        "https://www.youtube.com/embed/8OKv3US9MuQ",
+        "https://www.youtube.com/embed/3m-6L-WLcE0",
+        "https://www.youtube.com/embed/Y2Tx95Ub974",
+        "https://www.youtube.com/embed/xa-XjV0kfQI",
+        "https://www.youtube.com/embed/D7JHBkGMCl8",
+        "https://www.youtube.com/embed/xm-n_LO-slY",
+        "https://www.youtube.com/embed/rYeTZbOTNyg",
+        "https://www.youtube.com/embed/yY-hD9nj9-k",
+        "https://www.youtube.com/embed/RFow2bQ51-8",
+        "https://www.youtube.com/embed/TWXxn2gJMw4",
+        "https://www.youtube.com/embed/4gr_pUrJ8SA",
+        "https://www.youtube.com/embed/z9yzYp3kMuo",
+        "https://www.youtube.com/embed/-BOPRK-5Tag",
+        "https://www.youtube.com/embed/o4snn9Kxvr8",
+        "https://www.youtube.com/embed/0OklPDe2AVQ",
+        "https://www.youtube.com/embed/V7a8GOaE-fU",
+        "https://www.youtube.com/embed/08kKYHMf1Qw",
+        "https://www.youtube.com/embed/fZc5B-T55zU",
+        "https://www.youtube.com/embed/Ev2F3QmAM_8",
+        "https://www.youtube.com/embed/Sb-eTTMZogQ",
+        "https://www.youtube.com/embed/jx8kWsX2Wj4",
+        "https://www.youtube.com/embed/85OykieQ92U",
+        "https://www.youtube.com/embed/omtp5navQdI",
+        "https://www.youtube.com/embed/3qfknrCiU20",
+        "https://www.youtube.com/embed/pwhcl4kD9FY",
+        "https://www.youtube.com/embed/LnAVrcrbk2A",
+        "https://www.youtube.com/embed/DfOAOwGxH1c",
+        "https://www.youtube.com/embed/TEpKHsVWkbI",
+        "https://www.youtube.com/embed/r8XvAGjbjKw",
+        "https://www.youtube.com/embed/d4-fP_dekW8",
+        "https://www.youtube.com/embed/Ef3oDvtYMz8",
+        "https://www.youtube.com/embed/x8JaJTGd4TQ",
+        "https://www.youtube.com/embed/44jkgZ-zobY",
+        "https://www.youtube.com/embed/wmXTkzl-RmI",
+        "https://www.youtube.com/embed/RC7VYGI4tCI",
+        "https://www.youtube.com/embed/KZZjLT-GudI",
+        "https://www.youtube.com/embed/KCCKfnYSM7Q",
+        "https://www.youtube.com/embed/WqrHnDz8MOY",
+        "https://www.youtube.com/embed/0O25KB1lXLA",
+        "https://www.youtube.com/embed/KBYGHr4IsQY",
+        "https://www.youtube.com/embed/XNn_elVu4pI",
+        "https://www.youtube.com/embed/at5VTAwB5XI",
+        "https://www.youtube.com/embed/OWbbAoRsj_k",
+        "https://www.youtube.com/embed/sCM166IoT3I",
+        "https://www.youtube.com/embed/RPgYKfyzhKI",
+        "https://www.youtube.com/embed/kqlODaDH4Zc",
+        "https://www.youtube.com/embed/mHg6kB2mAww",
+        "https://www.youtube.com/embed/QU5tIoKjscg",
+        "https://www.youtube.com/embed/sf7-1vXMxD4",
+        "https://www.youtube.com/embed/-GtTajxae8g",
+        "https://www.youtube.com/embed/PfG3uMOUtLo",
+        "https://www.youtube.com/embed/iOS16WRLu4M",
+        "https://www.youtube.com/embed/AM_VULpFcNo",
+        "https://www.youtube.com/embed/zpPaOREAkqw",
+        "https://www.youtube.com/embed/1eji_5tZb-c",
+        "https://www.youtube.com/embed/rqK41yKCKiM",
+        "https://www.youtube.com/embed/2J8TN346ff8",
+        "https://www.youtube.com/embed/vb9ChJaf7cM",
+        "https://www.youtube.com/embed/XCUIVzfW49c",
+        "https://www.youtube.com/embed/jUf3hhYPpPI",
+        "https://www.youtube.com/embed/OkHl5-fFE00",
+        "https://www.youtube.com/embed/N-CvkMS5YyU",
+        "https://www.youtube.com/embed/x_XZl1MYAoI",
+        "https://www.youtube.com/embed/JB7zfhJ-TLU",
+        "https://www.youtube.com/embed/U6mvs4ifVzY",
+        "https://www.youtube.com/embed/6nHtvH0GXKw",
+        "https://www.youtube.com/embed/Ot-1RsOwOgU",
+        "https://www.youtube.com/embed/bkr3QoewGKw",
+        "https://www.youtube.com/embed/b9YEdjef2oA",
+        "https://www.youtube.com/embed/pFuWbddyiuo"
+      ];
+
+
+
+
+
+
+
+Surah 1 - Al-Fatiha: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=sjS8vkvycmw
+VM1231:9 Surah 2 - Al-Baqarah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=Hvo4NeUxLdc
+VM1231:9 Surah 3 - Al Imran: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=JAdx6tR1WnQ
+VM1231:9 Surah 4 - An-Nisa: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=QER4JTHn-0E
+VM1231:9 Surah 5 - Al-Ma'idah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=lH-siAW6qgI
+VM1231:9 Surah 6 - Al-Anam: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=Hqt9lIFndko
+VM1231:9 Surah 7 - Al-Araf: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=3Wmf9YH3jE0
+VM1231:9 Surah 8 - Al-Anfal: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=NuhowPIwQnY
+VM1231:9 Surah 9 - At-tauba: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=WEkenhA5mPU
+VM1231:9 Surah 10 - Yunus: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=Lu-n16Dvn_U
+VM1231:9 Surah 11 - Hud: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=35TzhLl_bxA
+VM1231:9 Surah 12 - Yusuf: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=2gYbC7V99bE
+VM1231:9 Surah 13 - Ar-Rad: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=zaCtU6ICQwM
+VM1231:9 Surah 14 - Ibrahim: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=r1rttkN95fM
+VM1231:9 Surah 15 - Al-Hijr: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=5hfZfYtNyyc
+VM1231:9 Surah 16 - An-Nahl: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=E2QfGcVJgVc
+VM1231:9 Surah 17 - Al Isra: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=AnnupMVYFW4
+VM1231:9 Surah 18 - Al-Kahf: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=OSAIZ5mRA9k
+VM1231:9 Surah 19 - Maryam: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=tbOo7KvAV-g
+VM1231:9 Surah 20 - Ta-Ha: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=lgxhTUXS-cE
+VM1231:9 Surah 21 - Al-Anbiya: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=0VbXvzUB4aI
+VM1231:9 Surah 22 - Al-Hajj: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=fEQ4yD2SqqE
+VM1231:9 Surah 23 - Al-Mu'minun: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=FlmvtkakSfg
+VM1231:9 Surah 24 - An-Nur: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=TVC8A720lgc
+VM1231:9 Surah 25 - Al-Furqan: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=44bpk_QSJpo
+VM1231:9 Surah 26 - Ash-Shu'ara: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=LYnfRh6SlgQ
+VM1231:9 Surah 27 - An-Naml: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=3Q6qY-GOzFo
+VM1231:9 Surah 28 - Al-Qasas: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=qgeHsDYqjpM
+VM1231:9 Surah 29 - Al-Ankabut: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=AAMqxrFhP6Y
+VM1231:9 Surah 30 - Ar-Rum: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=Kb0GuzuTxys
+VM1231:9 Surah 31 - Luqman: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=BXQNWTH5b6g
+VM1231:9 Surah 32 - As-Sajdah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=fyTTBm40EsI
+VM1231:9 Surah 33 - Al-Ahzab: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=fO6-swedJ1Y
+VM1231:9 Surah 34 - Saba: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=oVP46R8tRnE
+VM1231:9 Surah 35 - Fatir: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=MA9vsGaH3U0
+VM1231:9 Surah 36 - Ya-Sin: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=tOafZpE1KvE
+VM1231:9 Surah 37 - As-Saffat: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=MQbWkv8E4NQ
+VM1231:9 Surah 38 - Sad: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=583u5D3p4hA
+VM1231:9 Surah 39 - Az-Zumar: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=aoJzNFZD_fA
+VM1231:9 Surah 40 - Ghafir: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=atfTeTESraU
+VM1231:9 Surah 41 - Fussilat: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=8OKv3US9MuQ
+VM1231:9 Surah 42 - Ash-Shura: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=3m-6L-WLcE0
+VM1231:9 Surah 43 - Az-Zukhruf: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=Y2Tx95Ub974
+VM1231:9 Surah 44 - Ad-Dukhan: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=xa-XjV0kfQI
+VM1231:9 Surah 45 - Al-Jathiya: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=D7JHBkGMCl8
+VM1231:9 Surah 46 - Al-Ahqaf: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=xm-n_LO-slY
+VM1231:9 Surah 47 - Muhammad: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=rYeTZbOTNyg
+VM1231:9 Surah 48 - Al-Fath: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=yY-hD9nj9-k
+VM1231:9 Surah 49 - Al-Hujurat: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=RFow2bQ51-8
+VM1231:9 Surah 50 - Qaf: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=TWXxn2gJMw4
+VM1231:9 Surah 51 - Adh-Dhariyat: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=4gr_pUrJ8SA
+VM1231:9 Surah 52 - At-Tur: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=z9yzYp3kMuo
+VM1231:9 Surah 53 - An-Najm: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=-BOPRK-5Tag
+VM1231:9 Surah 54 - Al-Qamar: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=o4snn9Kxvr8
+VM1231:9 Surah 55 - Ar-Rahman: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=0OklPDe2AVQ
+VM1231:9 Surah 56 - Al-Waqi'ah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=V7a8GOaE-fU
+VM1231:9 Surah 57 - Al-Hadid: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=08kKYHMf1Qw
+VM1231:9 Surah 58 - Al-Mujadila: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=fZc5B-T55zU
+VM1231:9 Surah 59 - Al-Hashr: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=Ev2F3QmAM_8
+VM1231:9 Surah 60 - Al-Mumtahanah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=Sb-eTTMZogQ
+VM1231:9 Surah 61 - As-Saff: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=jx8kWsX2Wj4
+VM1231:9 Surah 62 - Al-Jumu'ah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=85OykieQ92U
+VM1231:9 Surah 63 - Al-Munafiqun: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=omtp5navQdI
+VM1231:9 Surah 64 - At-Taghabun: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=3qfknrCiU20
+VM1231:9 Surah 65 - At-Talaq: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=pwhcl4kD9FY
+VM1231:9 Surah 66 - At-Tahrim: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=LnAVrcrbk2A
+VM1231:9 Surah 67 - Al-Mulk: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=DfOAOwGxH1c
+VM1231:9 Surah 68 - Al-Qalam: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=TEpKHsVWkbI
+VM1231:9 Surah 69 - Al-Haqqah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=r8XvAGjbjKw
+VM1231:9 Surah 70 - Al-Ma'arij: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=d4-fP_dekW8
+VM1231:9 Surah 71 - Nuh: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=Ef3oDvtYMz8
+VM1231:9 Surah 72 - Al-Jinn: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=x8JaJTGd4TQ
+VM1231:9 Surah 73 - Al-Muzzammil: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=44jkgZ-zobY
+VM1231:9 Surah 74 - Al-Muddaththir: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=wmXTkzl-RmI
+VM1231:9 Surah 75 - Al-Qiyamah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=RC7VYGI4tCI
+VM1231:9 Surah 76 - Al-Insan: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=KZZjLT-GudI
+VM1231:9 Surah 77 - Al-Mursalat: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=KCCKfnYSM7Q
+VM1231:9 Surah 78 - An-Naba: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=WqrHnDz8MOY
+VM1231:9 Surah 79 - An-Nazi'at: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=0O25KB1lXLA
+VM1231:9 Surah 80 - Abasa: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=KBYGHr4IsQY
+VM1231:9 Surah 81 - At-Takwir: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=XNn_elVu4pI
+VM1231:9 Surah 82 - Al-Infitar: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=at5VTAwB5XI
+VM1231:9 Surah 83 - Al-Mutaffifin: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=OWbbAoRsj_k
+VM1231:9 Surah 84 - Al-Inshiqaq: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=sCM166IoT3I
+VM1231:9 Surah 85 - Al-Buruj: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=RPgYKfyzhKI
+VM1231:9 Surah 86 - At-Tariq: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=kqlODaDH4Zc
+VM1231:9 Surah 87 - Al-A'la: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=mHg6kB2mAww
+VM1231:9 Surah 88 - Al-Ghashiyah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=QU5tIoKjscg
+VM1231:9 Surah 89 - Al-Fajr: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=sf7-1vXMxD4
+VM1231:9 Surah 90 - Al-Balad: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=-GtTajxae8g
+VM1231:9 Surah 91 - Ash-Shams: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=PfG3uMOUtLo
+VM1231:9 Surah 92 - Al-Layl: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=iOS16WRLu4M
+VM1231:9 Surah 93 - Ad-Dhuha: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=AM_VULpFcNo
+VM1231:9 Surah 94 - Ash-Sharh: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=zpPaOREAkqw
+VM1231:9 Surah 95 - At-Tin: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=1eji_5tZb-c
+VM1231:9 Surah 96 - Al-Alaq: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=rqK41yKCKiM
+VM1231:9 Surah 97 - Al-Qadr: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=2J8TN346ff8
+VM1231:9 Surah 98 - Al-Bayyinah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=vb9ChJaf7cM
+VM1231:9 Surah 99 - Az-Zalzalah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=XCUIVzfW49c
+VM1231:9 Surah 100 - Al-Adiyat: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=jUf3hhYPpPI
+VM1231:9 Surah 101 - Al-Qari'ah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=OkHl5-fFE00
+VM1231:9 Surah 102 - At-Takathur: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=N-CvkMS5YyU
+VM1231:9 Surah 103 - Al-Asr: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=x_XZl1MYAoI
+VM1231:9 Surah 104 - Al-Humazah: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=JB7zfhJ-TLU
+VM1231:9 Surah 105 - Al-Fil: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=U6mvs4ifVzY
+VM1231:9 Surah 106 - Quraysh: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=6nHtvH0GXKw
+VM1231:9 Surah 107 - Al-Ma'un: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=Ot-1RsOwOgU
+VM1231:9 Surah 108 - Al-Kawthar: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=bkr3QoewGKw
+VM1231:9 Surah 109 - Al-Kafirun: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=b9YEdjef2oA
+VM1231:9 Surah 110 - An-Nasr: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=pFuWbddyiuo
+VM1231:9 Surah 111 - Al-Masad: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=v1FoyCFzzC8
+VM1231:9 Surah 112 - Al-Ikhlas: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=Z2D0iJOnNGQ
+VM1231:9 Surah 113 - Al-Falaq: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=ZWJ7pJ8rMeY
+VM1231:9 Surah 114 - An-Nas: 🔊 ARABIC Recitation with English Subtitles. Nature Backgrounds	https://www.youtube.com/watch?v=0hil1RMqWOY
