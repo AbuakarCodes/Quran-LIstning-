@@ -1,66 +1,68 @@
-import React from 'react'
-import 'regenerator-runtime/runtime';
-import Searchbar from '../SearchBar/Searchbar';
+import React from "react";
+import { useRef } from "react";
+import ReactDOM from "react-dom";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
 
-export default function SpeachRecognization() {
-    const {
-        transcript,
-        listening,
-        resetTranscript,
-        browserSupportsSpeechRecognition
-      } = useSpeechRecognition();
+
+export default function SpeachRecognization({ setsearchLogic , setshowPopUp , transcript, listening, resetTranscript, browserSupportsSpeechRecognition}) {
+
+ 
+
+  if (!browserSupportsSpeechRecognition) {
+    return <span>Browser doesn't support speech recognition.</span>;
+  }  
+  
+  
+  const bg = useRef(" ") 
+ 
+  return ReactDOM.createPortal(
+  <>
+      <div ref={bg}  className="bg fixed inset-0 flex justify-center items-center backdrop-blur-sm">
+
+
+
+<div class=" flex flex-col w-[40%] p-6  border border-gray-200 rounded-lg shadow bg-[#1b1b1b]">
+    <div className="ml-auto"><button onClick={()=>setshowPopUp(false)}>X</button></div>
     
-      if (!browserSupportsSpeechRecognition) {
-        return <span>Browser doesn't support speech recognition.</span>;
-      }
+    <div className="flex items-center justify-between">
+    <div>
+      <p className=" text-[110%] text-white">Recite now</p>
+      <p className=" text-[110%] text-[#c4c4c4]">Recite any verse in Arabic, and the verse will appear</p>
+    </div>
     
-      return (
-          
-//           <div className='bg-green-400 h-[100vh]'>
+    <div className="h-20 w-20 rounded-[50%] flex-center bg-slate-400">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M12.304 14.946a3.573 3.573 0 0 0 3.558-3.566V3.566A3.573 3.573 0 0 0 12.304 0a3.573 3.573 0 0 0-3.56 3.566v7.814a3.573 3.573 0 0 0 3.56 3.566m6.286-3.915c0 3.566-3.024 6.062-6.286 6.062-3.263 0-6.287-2.496-6.287-6.062H4c0 4.041 3.203 7.429 7.117 7.964v4.255h2.373v-4.255c3.914-.594 7.117-3.923 7.117-7.964z"></path></svg>
+    </div>
+    
+    </div>
+    
 
-         
 
-
-
-
-       
-
-<>
-<Searchbar></Searchbar>
-
-{/* <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-Toggle modal
-</button> */}
-
-<div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative p-4 w-full max-w-md max-h-full">
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-            <button type="button" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal">
-                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                </svg>
-                <span class="sr-only">Close modal</span>
-            </button>
-
-            <div class="p-4 md:p-5 text-center">
+          <div class="p-4 md:p-5 text-center">
             <p>Microphone: {listening ? 'on' : 'off'}</p>
-          <button onClick={SpeechRecognition.startListening}>Start</button>
+          <button  onClick={SpeechRecognition.startListening}>Start</button>
           <button onClick={SpeechRecognition.stopListening}>Stop</button>
           <button onClick={resetTranscript}>Reset</button>
           <p className='text-black'>{transcript}</p>
-            </div>
-        </div>
-    </div>
+          <button onClick={()=> setsearchLogic(transcript)}>AAAAAA</button>
+            </div> 
+
 </div>
 
-</>
-
-
-        // </div>
 
         
-       
-      );
+    </div>
+
+
+
+  </>,
+  document.getElementById("portal")
+  )
 }
+
+
+
+
+
+         

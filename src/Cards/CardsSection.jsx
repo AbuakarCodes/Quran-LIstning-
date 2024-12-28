@@ -25,6 +25,7 @@ export default function CardsSection({searchLogic}) {
             Ayahs={card.Ayahs}
           />
         </Link>
+        
       ))
     : CardsArray.map((card, index) => (
         <Link to={`indivisual/${card.SurahNameEn}`} key={index}>
@@ -37,6 +38,7 @@ export default function CardsSection({searchLogic}) {
           />
         </Link>
       ))
+     
 }
  
         </div>

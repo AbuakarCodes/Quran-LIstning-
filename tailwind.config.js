@@ -9,7 +9,16 @@ export default {
     extend: {},
   },
   plugins: [
-    require('flowbite/plugin'),
+    function ({ addUtilities }) {
+      addUtilities({
+        '.flex-center': {
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        },
+      });
+    },
+
   ],
 }
 

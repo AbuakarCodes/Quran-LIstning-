@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useParams } from 'react-router';
 import CardsArray from './Cardsdata';
 import IndivisualCardNotFound from '../Erros and Warning/IndivisualCardNotFound';
+import Loders from "../Loders/Loders.jsx"
 
 
 const IndividualCardVideo = () => {
@@ -14,7 +15,15 @@ const IndividualCardVideo = () => {
     return <IndivisualCardNotFound/>
   }
 
+
+    const [loading, setLoading] = useState(true);
+  
+    // Function to handle when the video has loaded
+    const handleVideoLoad = () => {
+      setLoading(false); // Set loading to false when the video has loaded
+    }
   return (
+
     <div className="flex justify-center items-center min-h-[100vh] w-full bg-[#1F2125] p-4">
   <div className="container mx-auto text-center flex items-center justify-center flex-col p-6  h-[90vh] w-full bg-black bg-opacity-60 rounded-lg shadow-lg">
     
@@ -33,10 +42,12 @@ const IndividualCardVideo = () => {
     </div>
 
     <div className="video-container mb-6 md:min-h-[80%] min-h-[50%] w-full">
+   {loading && <Loders/>}
       <iframe
         width="100%"
         height="100%"
         src= {individualCardVideo[0].link}
+        onLoad={handleVideoLoad}
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

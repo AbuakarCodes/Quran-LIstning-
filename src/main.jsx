@@ -1,5 +1,5 @@
 import './index.css'
-import 'flowbite';
+import 'regenerator-runtime/runtime'; 
 
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
